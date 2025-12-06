@@ -2,6 +2,29 @@
 
 @import "tailwindcss";
 
+/* Custom Color Palette */
+@theme {
+  --color-pastel-yellow: #f4e9a9;
+  --color-pastel-peach: #f5dcc4;
+  --color-pastel-orange: #f4c5a3;
+  --color-pastel-rose: #f5b6ba;
+
+  --color-pastel-lime: #e4e8a3;
+  --color-pastel-mint: #b5ddb5;
+  --color-pastel-turquoise: #a8ddd8;
+  --color-pastel-sky: #b3d9e8;
+
+  --color-pastel-periwinkle: #a8c5e8;
+  --color-pastel-lavender: #c5b8e8;
+  --color-pastel-pink: #e8b8d8;
+  --color-pastel-blush: #f5c5d8;
+
+  --color-pastel-taupe: #b8a89a;
+  --color-pastel-sand: #d4c4a8;
+  --color-pastel-gray: #d8d8d8;
+  --color-pastel-slate: #78868f;
+}
+
 * {
   box-sizing: border-box;
 }
