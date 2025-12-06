@@ -63,17 +63,17 @@ export default function CalendarGrid({ calendarData, onSelectDay, currentDate }:
           <div className="flex items-center p-0 ">
             <button
               onClick={() => window.location.reload()}
-              className="text-white hover:text-white/80 transition-all p-4 hover:bg-white/20 rounded-full flex items-center gap-2 group"
+              className="text-white hover:text-white/80 transition-all px-4 py-4 hover:bg-white/20 rounded-full flex items-center gap-2 group"
               aria-label="Tornar a l'inici"
             >
-              <svg className="w-6 h-6 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-8 h-8 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
-              <span className="text-sm font-medium hidden sm:inline">Tornar</span>
+              {/* <span className="text-sm font-medium hidden sm:inline">Tornar</span> */}
             </button>
             <div className="text-left flex-1">
               <h1 className="text-[1.9em] font-bold text-white drop-shadow-lg">
-                70 Dies Complint 70
+                70 Dies Cumplint 70
               </h1>
               {/* <p className="text-sm text-white/90 mt-1 drop-shadow">Un regal especial cada dia</p> */}
             </div>
