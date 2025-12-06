@@ -1,4 +1,5 @@
 import type { CalendarData } from '../types/calendar';
+import PhotoCollage from './PhotoCollage';
 
 interface WelcomeScreenProps {
   onStart: () => void;
@@ -8,27 +9,16 @@ interface WelcomeScreenProps {
 export default function WelcomeScreen({ onStart, calendarData }: WelcomeScreenProps) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pastel-peach via-pastel-sky to-pastel-mint flex items-center justify-center p-4">
-      <div className="max-w-lg w-full">
-        <div className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden border-4 border-white">
+      <div className="max-w-2xl w-full">
+        <div className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl overflow-visible border-4 border-white">
           {/* Decorative header */}
           <div className="h-3 bg-gradient-to-r from-pastel-yellow via-pastel-turquoise to-pastel-lavender"></div>
 
           {/* Content */}
-          <div className="p-8 sm:p-12 text-center">
-            {/* Main illustration area */}
-            <div className="mb-8 relative">
-              <div className="w-48 h-48 sm:w-64 sm:h-64 mx-auto bg-gradient-to-br from-pastel-peach via-pastel-blush to-pastel-lavender rounded-full flex items-center justify-center overflow-hidden shadow-xl border-4 border-white relative">
-                {/* Decorative circles */}
-                <div className="absolute top-4 right-8 w-12 h-12 bg-pastel-yellow rounded-full opacity-40"></div>
-                <div className="absolute bottom-8 left-6 w-16 h-16 bg-pastel-mint rounded-full opacity-40"></div>
-
-                {/* Center emoji */}
-                <div className="text-8xl sm:text-9xl drop-shadow-lg relative z-10">🎂</div>
-              </div>
-
-              {/* Floating decorations */}
-              <div className="absolute -top-2 -right-2 text-5xl animate-bounce">✨</div>
-              <div className="absolute -bottom-2 -left-2 text-4xl animate-bounce delay-200">🎁</div>
+          <div className="p-4 sm:p-8 text-center">
+            {/* Photo collage */}
+            <div className="mb-6 relative flex justify-center">
+              <PhotoCollage />
             </div>
 
             {/* Title */}
@@ -37,7 +27,7 @@ export default function WelcomeScreen({ onStart, calendarData }: WelcomeScreenPr
                 70 Dies
               </h1>
               <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-pastel-turquoise via-pastel-sky to-pastel-periwinkle bg-clip-text text-transparent">
-                Complint 70
+                Celebrant 70
               </h2>
             </div>
 

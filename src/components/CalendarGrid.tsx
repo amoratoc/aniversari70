@@ -73,7 +73,7 @@ export default function CalendarGrid({ calendarData, onSelectDay, currentDate }:
             </button>
             <div className="text-left flex-1">
               <h1 className="text-[1.9em] font-bold text-white drop-shadow-lg">
-                70 Dies Cumplint 70
+                70 Dies Celebrant 70
               </h1>
               {/* <p className="text-sm text-white/90 mt-1 drop-shadow">Un regal especial cada dia</p> */}
             </div>
@@ -125,7 +125,7 @@ export default function CalendarGrid({ calendarData, onSelectDay, currentDate }:
                         {dayData.day}
                       </span>
                       {/* Date */}
-                      <span className="text-sm sm:text-sm text-white/90 mt-1 font-semibold drop-shadow">
+                      <span className="text-base sm:text-sm text-white/90 mt-1 font-extrabold drop-shadow">
                         {formatDate(dayData.day)}
                       </span>
                       {/* Today indicator */}
