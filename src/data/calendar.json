@@ -1,0 +1,67 @@
+{
+  "title": "70 Dies Complint 70",
+  "subtitle": "Per la millor mamá del món",
+  "startDate": "2025-12-05",
+  "days": [
+    {
+      "day": 1,
+      "title": "¡Feliz cumpleaños, mamá!",
+      "clue": "Busca en el primer lugar donde tomas tu café cada mañana. Allí encontrarás una sorpresa especial.",
+      "image": null
+    },
+    {
+      "day": 2,
+      "title": "Día de recuerdos",
+      "clue": "Mira en el álbum de fotos de cuando éramos pequeños. Entre las páginas hay algo especial esperándote.",
+      "image": null
+    },
+    {
+      "day": 3,
+      "title": "Rincón favorito",
+      "clue": "La pista de hoy te lleva a un lugar especial donde compartimos risas y café.",
+      "image": "/images/day3.jpg"
+    },
+    {
+      "day": 4,
+      "title": "Tesoro en casa",
+      "clue": "Revisa el cajón donde guardas tus cosas más preciadas. Hay una sorpresa esperando.",
+      "image": null
+    },
+    {
+      "day": 5,
+      "title": "Aroma especial",
+      "clue": "Donde guardas tus especias favoritas, encontrarás algo dulce.",
+      "image": null
+    },
+    {
+      "day": 6,
+      "title": "Lectura del día",
+      "clue": "Entre tus libros favoritos hay uno que hoy tiene un marcador muy especial.",
+      "image": null
+    },
+    {
+      "day": 7,
+      "title": "Jardín de sorpresas",
+      "clue": "Tu planta favorita tiene hoy un nuevo amigo escondido entre sus hojas.",
+      "image": null
+    },
+    {
+      "day": 8,
+      "title": "Momento de relax",
+      "clue": "Donde guardas tus productos de baño favoritos, hay algo nuevo para ti.",
+      "image": null
+    },
+    {
+      "day": 9,
+      "title": "Tesoro musical",
+      "clue": "Junto a tu colección de música encontrarás una melodía especial.",
+      "image": null
+    },
+    {
+      "day": 10,
+      "title": "Rincón acogedor",
+      "clue": "En tu lugar favorito para descansar hay una sorpresa cómoda esperándote.",
+      "image": null
+    }
+  ]
+}
