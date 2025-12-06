@@ -8,17 +8,24 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    
+    # 🔑 AÑADE ESTE BLOQUE DE PERMISOS
+    permissions:
+      contents: write # Esto le da permiso para escribir y crear la rama gh-pages.
+      pages: write   # Permiso de escritura para GitHub Pages
+      id-token: write # Permiso para el token
+    # ⬆️ FIN DEL BLOQUE A AÑADIR
+
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
         with:
-          # Necesitas una copia completa del historial para que 'actions-gh-pages' funcione correctamente
           fetch-depth: 0
 
       - name: Set up Node.js ☕
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Asegúrate de usar una versión de Node compatible con tu proyecto
+          node-version: '20' 
 
       - name: Install dependencies 📦
         run: npm install
@@ -30,7 +37,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # Directorio de salida de tu build (Vite usa 'dist' por defecto)
           publish_dir: ./dist
-          # El nombre de la rama que GitHub Pages debe servir
           publish_branch: gh-pages
