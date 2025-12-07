@@ -73,7 +73,7 @@ export default function CalendarGrid({ calendarData, onSelectDay, currentDate }:
             </button>
             <div className="text-center flex-1 px-4">
               <h1 className="text-[1.9em] font-bold text-white drop-shadow-lg">
-                70 Dies Celebrant 70 anys
+                70 dies celebrant 70 anys
               </h1>
               {/* <p className="text-sm text-white/90 mt-1 drop-shadow">Un regal especial cada dia</p> */}
             </div>
@@ -83,9 +83,10 @@ export default function CalendarGrid({ calendarData, onSelectDay, currentDate }:
 
       {/* Message banner */}
       <div className="max-w-6xl mx-auto px-4 py-8">
-        <div className="rounded-3xl p-8 text-center shadow-lg border-4 border-gray-200">
+        <div className="rounded-3xl px-2 py-4 text-center shadow-lg border-4 border-gray-200">
+          <h1 className="text-3xl">✨</h1>
           <h2 className="text-3xl font-bold text-gray drop-shadow-lg mb-2">
-            Per molts anys, mamà! ✨
+            Per molts anys, mamà! 
           </h2>
           <p className="text-gray/95 text-lg drop-shadow">
             Una nova sorpresa t'espera cada dia.

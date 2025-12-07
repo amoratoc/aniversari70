@@ -23,31 +23,38 @@ const photoTransforms = images.map(() => ({
   offset: getRandomOffset(),
 }));
 
-export default function PhotoCollage() {
+interface PhotoCollageProps {
+  maxPhotos: number;
+}
+
+export default function PhotoCollage({ maxPhotos }: PhotoCollageProps) {
   const [visiblePhotos, setVisiblePhotos] = useState(0);
   const [isStacking, setIsStacking] = useState(true);
   const [rotationIndex, setRotationIndex] = useState(0);
+
+  // Limit photos to show based on current day
+  const photosToShow = Math.min(maxPhotos, images.length);
 
   useEffect(() => {
     // Animate photos appearing one by one
     const interval = setInterval(() => {
       setVisiblePhotos((prev) => {
-        if (prev >= images.length) {
+        if (prev >= photosToShow) {
           clearInterval(interval);
           setIsStacking(false); // Done stacking
           return prev;
         }
         return prev + 1;
       });
-    }, 320); // Stack a new photo every 320ms
+    }, 1000); // Stack a new photo every 320ms
 
     return () => clearInterval(interval);
-  }, []);
+  }, [photosToShow]);
 
   const handlePhotoClick = () => {
-    if (!isStacking) {
+    if (!isStacking && photosToShow > 0) {
       // Cycle through photos: move top photo to bottom
-      setRotationIndex((prev) => (prev + 1) % images.length);
+      setRotationIndex((prev) => (prev + 1) % photosToShow);
     }
   };
 
@@ -65,9 +72,9 @@ export default function PhotoCollage() {
         className="relative w-72 h-72 sm:w-96 sm:h-96 flex items-center justify-center cursor-pointer"
         onClick={handlePhotoClick}
       >
-        {images.map((img, index) => {
+        {images.slice(0, photosToShow).map((img, index) => {
           // Calculate rotated index to cycle photos
-          const rotatedIndex = (index - rotationIndex + images.length) % images.length;
+          const rotatedIndex = (index - rotationIndex + photosToShow) % photosToShow;
           const transform = photoTransforms[index];
           const isVisible = rotatedIndex < visiblePhotos;
 
@@ -76,7 +83,7 @@ export default function PhotoCollage() {
               key={index}
               className="absolute bg-white p-1 sm:p-3 shadow-xl transition-all duration-500 hover:scale-105 rounded-lg"
               style={{
-                width: '240px',
+                width: '320px',
                 height: '240px',
                 transform: `
                   rotate(${transform.rotation}deg)
