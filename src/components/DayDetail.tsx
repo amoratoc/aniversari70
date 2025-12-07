@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { DayData } from '../types/calendar';
-import { computeDateForDay } from '../utils/dateUtils';
+import { computeDateForDay, hasDayPassed } from '../utils/dateUtils';
 import { getAssetPath } from '../utils/assetPath';
 
 interface DayDetailProps {
@@ -10,7 +10,10 @@ interface DayDetailProps {
 }
 
 export default function DayDetail({ dayData, startDate, onClose }: DayDetailProps) {
-  const [isRevealed, setIsRevealed] = useState(false);
+  // If day has passed, show content directly without mystery box
+  const dayAlreadyPassed = hasDayPassed(startDate, dayData.day);
+
+  const [isRevealed, setIsRevealed] = useState(dayAlreadyPassed);
   const [isRevealing, setIsRevealing] = useState(false);
 
   const getDateForDay = (): string => {
@@ -147,11 +150,12 @@ export default function DayDetail({ dayData, startDate, onClose }: DayDetailProp
 
     if (!isRevealed) {
       return (
-        <div
-          onClick={handleReveal}
-          className={`cursor-pointer transform transition-all duration-300 hover:scale-105 ${isRevealing ? effect.exitAnimation : ''}`}
-        >
-          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl py-8 sm:p-10 shadow-xl border-4 border-white relative overflow-hidden`}>
+        <div className="overflow-hidden">
+          <div
+            onClick={handleReveal}
+            className={`cursor-pointer transform transition-all duration-300 hover:scale-105 ${isRevealing ? effect.exitAnimation : ''}`}
+          >
+            <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl py-8 sm:p-10 shadow-xl border-4 border-white relative overflow-hidden`}>
             {/* Mystery pattern - different for each effect */}
             <div className="absolute inset-0 opacity-10">
               {effect.pattern}
@@ -165,26 +169,46 @@ export default function DayDetail({ dayData, startDate, onClose }: DayDetailProp
               </h4>
             </div>
           </div>
+          </div>
         </div>
       );
     }
 
     // Show content based on type
-    switch (dayData.type) {
-      case 'clue':
-        return (
-          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-5 sm:p-6 shadow-xl border-4 border-white ${effect.revealAnimation}`}>
+    // Wrap in overflow-hidden to prevent scrollbars during reveal animations
+    return (
+      <div className="overflow-hidden">
+        {(() => {
+          switch (dayData.type) {
+            case 'clue':
+              return (
+          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-5 sm:p-6 shadow-xl border-4 border-white ${!dayAlreadyPassed ? effect.revealAnimation : ''}`}>
             <div className="flex flex-col sm:flex-row items-start gap-4">
               <div className="shrink-0 w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl shadow-lg">
                 🎁
               </div>
               <div className="flex-1">
-                <h4 className="font-bold text-lg text-white drop-shadow mb-2">
-                  La teva pista d'avui:
-                </h4>
-                <p className="text-stone-800 leading-relaxed text-base">
-                  {dayData.clue}
-                </p>
+                {dayAlreadyPassed && dayData.outcome ? (
+                  // Show outcome if day has passed
+                  <>
+                    <h4 className="font-bold text-lg text-white drop-shadow mb-2">
+                      El teu regal era:
+                    </h4>
+                    <p className="text-stone-800 leading-relaxed text-base font-semibold">
+                      {dayData.outcome}
+                    </p>
+                  </>
+                ) : (
+                  // Show clue if it's today or outcome doesn't exist
+                  <>
+                    <h4 className="font-bold text-lg text-white drop-shadow mb-2">
+                      La teva pista d'avui:
+                    </h4>
+                    <p className="text-stone-800 leading-relaxed text-base">
+                      {dayData.clue}
+                    </p>
+                  </>
+                )}
               </div>
             </div>
           </div>
@@ -192,7 +216,7 @@ export default function DayDetail({ dayData, startDate, onClose }: DayDetailProp
 
       case 'audio':
         return (
-          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-6 sm:p-8 shadow-xl border-4 border-white ${effect.revealAnimation}`}>
+          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-6 sm:p-8 shadow-xl border-4 border-white ${!dayAlreadyPassed ? effect.revealAnimation : ''}`}>
             <div className="flex flex-col items-center gap-6">
               <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-5xl shadow-lg">
                 🎵
@@ -218,7 +242,7 @@ export default function DayDetail({ dayData, startDate, onClose }: DayDetailProp
 
       case 'video':
         return (
-          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-6 sm:p-8 shadow-xl border-4 border-white ${effect.revealAnimation}`}>
+          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-6 sm:p-8 shadow-xl border-4 border-white ${!dayAlreadyPassed ? effect.revealAnimation : ''}`}>
             <div className="flex flex-col items-center gap-6">
               <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-5xl shadow-lg">
                 🎬
@@ -245,7 +269,7 @@ export default function DayDetail({ dayData, startDate, onClose }: DayDetailProp
 
       case 'virtual':
         return (
-          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-6 sm:p-8 shadow-xl border-4 border-white ${effect.revealAnimation}`}>
+          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-6 sm:p-8 shadow-xl border-4 border-white ${!dayAlreadyPassed ? effect.revealAnimation : ''}`}>
             <div className="flex flex-col items-center gap-6">
               <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-5xl shadow-lg">
                 🌟
@@ -262,9 +286,12 @@ export default function DayDetail({ dayData, startDate, onClose }: DayDetailProp
           </div>
         );
 
-      default:
-        return null;
-    }
+            default:
+              return null;
+          }
+        })()}
+      </div>
+    );
   };
 
   return (
@@ -293,7 +320,7 @@ export default function DayDetail({ dayData, startDate, onClose }: DayDetailProp
         </div>
 
         {/* Content */}
-        <div className="p-5 sm:p-6 space-y-5">
+        <div className="p-5 sm:p-6 space-y-5 overflow-hidden">
 
           {/* Date badge */}
           <div className="flex justify-center">
@@ -332,7 +359,7 @@ export default function DayDetail({ dayData, startDate, onClose }: DayDetailProp
               <div className="h-1 w-16 bg-linear-to-r from-transparent via-pastel-lavender to-transparent rounded-full"></div>
             </div>
             <p className="text-stone-600 italic font-['Caveat'] text-2xl">
-              {isRevealed ? 'Gaudeix de la sorpresa!' : 'Descobreix què t\'espera avui!'}
+              {isRevealed ? "Esperem que t'hagi agradat de la sorpresa!" : 'Descobreix què t\'espera avui!'}
             </p>
           </div>
 

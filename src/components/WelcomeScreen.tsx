@@ -1,5 +1,6 @@
 import type { CalendarData } from '../types/calendar';
 import PhotoCollage from './PhotoCollage';
+import { getCurrentDay } from '../utils/dateUtils';
 
 interface WelcomeScreenProps {
   onStart: () => void;
@@ -7,21 +8,7 @@ interface WelcomeScreenProps {
 }
 
 export default function WelcomeScreen({ onStart, calendarData }: WelcomeScreenProps) {
-  // Calculate current day number based on start date
-  const calculateCurrentDay = (): number => {
-    const today = new Date();
-    const startDate = new Date(calendarData.startDate);
-    today.setHours(0, 0, 0, 0);
-    startDate.setHours(0, 0, 0, 0);
-
-    const diffTime = today.getTime() - startDate.getTime();
-    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-
-    // Return day number (1-based), capped at total days
-    return Math.min(Math.max(diffDays + 1, 1), calendarData.days.length);
-  };
-
-  const currentDay = calculateCurrentDay();
+  const currentDay = getCurrentDay(calendarData.startDate, calendarData.days.length);
 
   return (
     <div className="min-h-screen bg-linear-to-br from-pastel-peach via-pastel-sky to-pastel-mint flex items-start justify-center p-4">

@@ -414,23 +414,6 @@ body {
   }
 }
 
-@keyframes confettiFall {
-  0% {
-    transform: translate3d(var(--confetti-shift, 0), -10vh, 0) rotate(0deg);
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  60% {
-    transform: translate3d(calc(var(--confetti-shift, 0) * 0.7), 50vh, 0) rotate(360deg);
-  }
-  100% {
-    transform: translate3d(calc(var(--confetti-shift, 0) + 30px), 110vh, 0) rotate(720deg);
-    opacity: 0;
-  }
-}
-
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
@@ -618,42 +601,4 @@ body {
 
 .delay-700 {
   animation-delay: 0.7s;
-}
-
-.confetti-wrapper {
-  position: fixed;
-  inset: 0;
-  overflow: hidden;
-  z-index: 60;
-}
-
-.confetti-piece {
-  position: absolute;
-  top: -10vh;
-  border-radius: 9999px;
-  animation: confettiFall var(--confetti-duration, 2s) ease-out forwards;
-  animation-delay: var(--confetti-delay, 0s);
-  opacity: 0;
-  mix-blend-mode: screen;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
-}
-
-.confetti-piece.confetti-pink {
-  background: linear-gradient(180deg, #ffd1dc, #ffa3c0);
-}
-
-.confetti-piece.confetti-sun {
-  background: linear-gradient(180deg, #fff1a3, #ffd37d);
-}
-
-.confetti-piece.confetti-mint {
-  background: linear-gradient(180deg, #c8ffd4, #7fe3b5);
-}
-
-.confetti-piece.confetti-lavender {
-  background: linear-gradient(180deg, #d9ccff, #b99bff);
-}
-
-.confetti-piece.confetti-sky {
-  background: linear-gradient(180deg, #cfe8ff, #8fd3ff);
 }

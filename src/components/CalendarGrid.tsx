@@ -1,5 +1,5 @@
 import type { CalendarData, DayData } from '../types/calendar';
-import { computeDateForDay } from '../utils/dateUtils';
+import { computeDateForDay, isDayUnlocked, isDayToday } from '../utils/dateUtils';
 
 interface CalendarGridProps {
   calendarData: CalendarData;
@@ -13,19 +13,11 @@ export default function CalendarGrid({ calendarData, onSelectDay, currentDate }:
   };
 
   const isUnlocked = (dayNumber: number): boolean => {
-    const today = new Date(currentDate);
-    const dayDate = new Date(getDateForDay(dayNumber));
-    today.setHours(0, 0, 0, 0);
-    dayDate.setHours(0, 0, 0, 0);
-    return dayDate <= today;
+    return isDayUnlocked(calendarData.startDate, dayNumber, currentDate);
   };
 
   const isToday = (dayNumber: number): boolean => {
-    const today = new Date(currentDate);
-    const dayDate = new Date(getDateForDay(dayNumber));
-    today.setHours(0, 0, 0, 0);
-    dayDate.setHours(0, 0, 0, 0);
-    return dayDate.getTime() === today.getTime();
+    return isDayToday(calendarData.startDate, dayNumber, currentDate);
   };
 
   const formatDate = (dayNumber: number): string => {

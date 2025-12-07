@@ -9,7 +9,8 @@
       "title": "Feliç aniversari, mamà!",
       "type": "clue",
       "clue": "Busca al primer lloc on prens el teu cafè cada matí. Allà trobaràs una sorpresa especial.",
-      "image": null
+      "image": null,
+      "outcome": "Un bonic marc de fotos amb una foto nostra."
     },
     {
       "day": 2,
@@ -30,14 +31,16 @@
       "title": "Tresor a casa",
       "clue": "Revisa el calaix on guardes les teves coses més preuades. Hi ha una sorpresa esperant.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": "Un collaret amb un penjoll que simbolitza la nostra família."
     },
     {
       "day": 5,
       "title": "Aroma especial",
       "clue": "On guardes les teves espècies favorites, trobaràs alguna cosa dolça.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": "Un conjunt de tes aromatitzats per a les teves tardes de relax."
     },
     {
       "day": 6,

@@ -3,6 +3,7 @@ export interface DayData {
   title: string;
   type: 'clue' | 'audio' | 'video' | 'virtual';
   clue?: string;  // Optional, only for type: 'clue'
+  outcome?: string;  // Optional, the actual gift for type: 'clue' (shown after day has passed)
   path?: string;  // Optional, for audio/video/virtual
   image: string | null;
 }
