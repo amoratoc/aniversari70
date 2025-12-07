@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import imageList from '../data/images.json';
+import { getAssetPath } from '../utils/assetPath';
 
 // List of all images - auto-generated from public/collage
-const images = imageList;
+// Apply base URL to each image path for GitHub Pages compatibility
+const images = imageList.map(path => getAssetPath(path));
 
 // Generate random rotation between min and max degrees
 const getRandomRotation = () => {

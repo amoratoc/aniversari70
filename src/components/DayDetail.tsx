@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import type { DayData } from '../types/calendar';
 import { computeDateForDay } from '../utils/dateUtils';
+import { getAssetPath } from '../utils/assetPath';
 
 interface DayDetailProps {
   dayData: DayData;
@@ -114,7 +115,7 @@ export default function DayDetail({ dayData, startDate, onClose }: DayDetailProp
                   className="w-full rounded-lg shadow-lg"
                   style={{ maxWidth: '100%' }}
                 >
-                  <source src={dayData.path} type="audio/mp4" />
+                  <source src={getAssetPath(dayData.path || '')} type="audio/mp4" />
                   El teu navegador no suporta la reproducció d'àudio.
                 </audio>
               </div>
@@ -141,7 +142,7 @@ export default function DayDetail({ dayData, startDate, onClose }: DayDetailProp
                   className="w-full rounded-lg shadow-lg"
                   style={{ maxWidth: '100%', maxHeight: '60vh' }}
                 >
-                  <source src={dayData.path} type="video/mp4" />
+                  <source src={getAssetPath(dayData.path || '')} type="video/mp4" />
                   El teu navegador no suporta la reproducció de vídeo.
                 </video>
               </div>
