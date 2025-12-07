@@ -10,7 +10,7 @@ type Screen = 'welcome' | 'calendar' | 'day';
 function App() {
   const [currentScreen, setCurrentScreen] = useState<Screen>('welcome');
   const [selectedDay, setSelectedDay] = useState<DayData | null>(null);
-  const [currentDate, setCurrentDate] = useState<string>(new Date().toISOString().split('T')[0]);
+  const [currentDate, _setCurrentDate] = useState<string>(new Date().toISOString().split('T')[0]);
 
   // For testing purposes - you can override the current date
   // Uncomment the line below and set a specific date to test different days

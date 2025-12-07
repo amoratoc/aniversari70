@@ -52,12 +52,10 @@ export default function PhotoCollage() {
   };
 
   return (
-    <div className="relative w-full flex flex-col items-center gap-8 py-8">
+    <div className="relative w-full flex flex-col items-center gap-5 py-4">
       {/* "Per molts anys!" text on top - more prominent */}
-      <div
-        className="transform -rotate-2"
-      >
-        <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold bg-gradient-to-r from-pastel-pink via-pastel-lavender to-pastel-blush bg-clip-text text-transparent drop-shadow-2xl font-['Caveat'] whitespace-nowrap">
+      <div className="transform -rotate-2 w-full z-50" >
+        <h2 className="text-7xl p-1 wrap sm:text-6xl md:text-7xl font-bold bg-linear-to-r from-pastel-pink via-pastel-lavender to-pastel-blush bg-clip-text text-transparent drop-shadow-2xl font-['Caveat'] text-center">
           Per molts anys! ✨
         </h2>
       </div>
@@ -76,7 +74,7 @@ export default function PhotoCollage() {
           return (
             <div
               key={index}
-              className="absolute bg-white p-2 sm:p-3 shadow-2xl transition-all duration-500 hover:scale-105 rounded-lg"
+              className="absolute bg-white p-1 sm:p-3 shadow-xl transition-all duration-500 hover:scale-105 rounded-lg"
               style={{
                 width: '240px',
                 height: '240px',

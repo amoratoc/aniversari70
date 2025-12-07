@@ -8,6 +8,7 @@ export interface DayData {
 export interface CalendarData {
   title: string;
   subtitle: string;
+  buttonText?: string;
   startDate: string;
   days: DayData[];
 }

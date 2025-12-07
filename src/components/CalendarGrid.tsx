@@ -56,9 +56,9 @@ export default function CalendarGrid({ calendarData, onSelectDay, currentDate }:
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-stone-50 via-neutral-50 to-slate-50">
+    <div className="min-h-screen bg-linear-to-br from-stone-50 via-neutral-50 to-slate-50">
       {/* Header */}
-      <div className="bg-gradient-to-r from-pastel-peach via-pastel-sky to-pastel-mint shadow-sm sticky top-0 z-10 border-b-4 border-white">
+      <div className="bg-linear-to-r from-pastel-peach via-pastel-sky to-pastel-mint shadow-sm sticky top-0 z-10 border-b-4 border-white">
         <div className="max-w-6xl mx-auto px-0 py-4">
           <div className="flex items-center p-0 ">
             <button
@@ -71,9 +71,9 @@ export default function CalendarGrid({ calendarData, onSelectDay, currentDate }:
               </svg>
               {/* <span className="text-sm font-medium hidden sm:inline">Tornar</span> */}
             </button>
-            <div className="text-left flex-1">
+            <div className="text-center flex-1 px-4">
               <h1 className="text-[1.9em] font-bold text-white drop-shadow-lg">
-                70 Dies Celebrant 70
+                70 Dies Celebrant 70 anys
               </h1>
               {/* <p className="text-sm text-white/90 mt-1 drop-shadow">Un regal especial cada dia</p> */}
             </div>

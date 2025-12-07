@@ -47,7 +47,7 @@ export default function DayDetail({ dayData, startDate, onClose }: DayDetailProp
         
         {/* Header with gradient */}
         {/* Menys py: py-4 en lloc de py-6 */}
-        <div className={`sticky top-0 bg-gradient-to-r ${getPastelColor()} rounded-t-3xl px-6 py-4 z-10 border-b-4 border-white shadow-lg`}>
+        <div className={`sticky top-0 bg-linear-to-r ${getPastelColor()} rounded-t-3xl px-6 py-4 z-10 border-b-4 border-white shadow-lg`}>
           <div className="flex items-center gap-4">
             <button
               onClick={onClose}
@@ -77,19 +77,19 @@ export default function DayDetail({ dayData, startDate, onClose }: DayDetailProp
           {/* Date badge */}
           <div className="flex justify-center">
             {/* Manté el text blanc perquè és un títol curt */}
-            <div className={`inline-block bg-gradient-to-r ${getPastelColor()} text-white px-5 py-2 rounded-full text-sm font-bold shadow-lg border-2 border-white`}>
+            <div className={`inline-block bg-linear-to-r ${getPastelColor()} text-white px-5 py-2 rounded-full text-sm font-bold shadow-lg border-2 border-white`}>
               {formatDate()}
             </div>
           </div>
 
           {/* Title */}
-          <h3 className="text-2xl sm:text-3xl font-bold text-center bg-gradient-to-r from-stone-600 to-stone-800 bg-clip-text text-transparent">
+          <h3 className="text-2xl sm:text-3xl font-bold text-center bg-linear-to-r from-stone-600 to-stone-800 bg-clip-text text-transparent">
             {dayData.title}
           </h3>
 
           {/* Image if available */}
           {dayData.image && (
-            <div className="relative rounded-xl overflow-hidden shadow-xl bg-gradient-to-br from-stone-100 to-stone-200 p-3 border-3 border-white"> {/* Reducció de mida de p-4 a p-3 i border-4 a border-3, rounded-2xl a rounded-xl */}
+            <div className="relative rounded-xl overflow-hidden shadow-xl bg-linear-to-br from-stone-100 to-stone-200 p-3 border-3 border-white"> {/* Reducció de mida de p-4 a p-3 i border-4 a border-3, rounded-2xl a rounded-xl */}
               <img
                 src={dayData.image}
                 alt={`Dia ${dayData.day}`}
@@ -103,9 +103,9 @@ export default function DayDetail({ dayData, startDate, onClose }: DayDetailProp
 
           {/* Clue section - Focus en la llegibilitat aquí! */}
           {/* Menys padding: p-5/sm:p-6 en lloc de p-6/sm:p-8 */}
-          <div className={`bg-gradient-to-br ${getPastelColor()} rounded-xl p-5 sm:p-6 shadow-xl border-4 border-white`}> {/* Rounded-2xl a rounded-xl */}
+          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-5 sm:p-6 shadow-xl border-4 border-white`}> {/* Rounded-2xl a rounded-xl */}
             <div className="flex flex-col sm:flex-row items-start gap-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl shadow-lg"> {/* Reducció de mida de 14 a 12 i 3xl a 2xl */}
+              <div className="shrink-0 w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl shadow-lg"> {/* Reducció de mida de 14 a 12 i 3xl a 2xl */}
                 🎁
               </div>
               <div className="flex-1">
@@ -125,9 +125,9 @@ export default function DayDetail({ dayData, startDate, onClose }: DayDetailProp
           {/* Decorative elements */}
           <div className="text-center space-y-3 py-1"> {/* Espaiat reduït */}
             <div className="flex items-center justify-center gap-2"> {/* Espaiat reduït a gap-2 */}
-              <div className="h-1 w-16 bg-gradient-to-r from-transparent via-pastel-pink to-transparent rounded-full"></div> {/* Mida reduïda a w-16 */}
+              <div className="h-1 w-16 bg-linear-to-r from-transparent via-pastel-pink to-transparent rounded-full"></div> {/* Mida reduïda a w-16 */}
               <div className="text-2xl">✨</div> {/* Mida reduïda a 2xl */}
-              <div className="h-1 w-16 bg-gradient-to-r from-transparent via-pastel-lavender to-transparent rounded-full"></div> {/* Mida reduïda a w-16 */}
+              <div className="h-1 w-16 bg-linear-to-r from-transparent via-pastel-lavender to-transparent rounded-full"></div> {/* Mida reduïda a w-16 */}
             </div>
             <p className="text-stone-600 italic font-['Caveat'] text-2xl"> {/* Mida reduïda a 2xl */}
               Gaudeix de la sorpresa!
