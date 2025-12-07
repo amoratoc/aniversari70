@@ -359,7 +359,7 @@ export default function DayDetail({ dayData, startDate, onClose }: DayDetailProp
               <div className="h-1 w-16 bg-linear-to-r from-transparent via-pastel-lavender to-transparent rounded-full"></div>
             </div>
             <p className="text-stone-600 italic font-['Caveat'] text-2xl">
-              {isRevealed ? "Esperem que t'hagi agradat de la sorpresa!" : 'Descobreix què t\'espera avui!'}
+              {dayAlreadyPassed ? "Esperem que t'hagi agradat de la sorpresa!" : 'Descobreix què t\'espera avui!'}
             </p>
           </div>
 
