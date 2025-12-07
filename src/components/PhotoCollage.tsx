@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
+import imageList from '../data/images.json';
 
-// Import all images from the collage folder using Vite's glob import
-const imageModules = (import.meta as any).glob('../assets/collage/*.JPG', { eager: true, import: 'default' });
-const images = Object.values(imageModules) as string[];
+// List of all images - auto-generated from public/collage
+const images = imageList;
 
 // Generate random rotation between min and max degrees
 const getRandomRotation = () => {
@@ -46,7 +46,7 @@ export default function PhotoCollage({ maxPhotos }: PhotoCollageProps) {
         }
         return prev + 1;
       });
-    }, 1000); // Stack a new photo every 320ms
+    }, 1000); // Stack a new photo every 1000ms
 
     return () => clearInterval(interval);
   }, [photosToShow]);

@@ -1,7 +1,9 @@
 export interface DayData {
   day: number;
   title: string;
-  clue: string;
+  type: 'clue' | 'audio' | 'video' | 'virtual';
+  clue?: string;  // Optional, only for type: 'clue'
+  path?: string;  // Optional, for audio/video/virtual
   image: string | null;
 }
 
