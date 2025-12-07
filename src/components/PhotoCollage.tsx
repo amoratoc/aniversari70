@@ -52,7 +52,7 @@ export default function PhotoCollage() {
   };
 
   return (
-    <div className="relative w-full flex flex-col items-center gap-5 py-4">
+    <div className="relative w-full flex flex-col items-center gap-3 py-4">
       {/* "Per molts anys!" text on top - more prominent */}
       <div className="transform -rotate-2 w-full z-50" >
         <h2 className="text-7xl p-1 wrap sm:text-6xl md:text-7xl font-bold bg-linear-to-r from-pastel-pink via-pastel-lavender to-pastel-blush bg-clip-text text-transparent drop-shadow-2xl font-['Caveat'] text-center">

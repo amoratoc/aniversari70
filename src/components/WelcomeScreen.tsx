@@ -17,7 +17,7 @@ export default function WelcomeScreen({ onStart, calendarData }: WelcomeScreenPr
           {/* Content */}
           <div className="p-4 sm:p-8 text-center">
             {/* Photo collage */}
-            <div className="mb-6 relative flex justify-center">
+            <div className="mb-2 relative flex justify-center">
               <PhotoCollage />
             </div>
 
@@ -52,9 +52,9 @@ export default function WelcomeScreen({ onStart, calendarData }: WelcomeScreenPr
             </button>
 
             {/* Small hint */}
-            <p className="text-sm text-stone-400 mt-6 italic">
+            {/* <p className="text-sm text-stone-400 mt-6 italic">
               Un nou regal cada dia durant 70 dies
-            </p>
+            </p> */}
           </div>
 
           {/* Decorative footer */}
