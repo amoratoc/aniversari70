@@ -57,6 +57,380 @@ body {
   }
 }
 
+/* Exit animations for mystery box - 1.5 seconds */
+@keyframes exitImplode {
+  0% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0));
+  }
+  20% {
+    transform: translate(-12px, -6px) scale(1.05) rotate(-2deg);
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.5));
+  }
+  40% {
+    transform: translate(12px, 6px) scale(0.95) rotate(3deg);
+    filter: drop-shadow(0 0 15px rgba(255, 180, 200, 0.7));
+  }
+  60% {
+    transform: translate(-6px, -3px) scale(1.1) rotate(-4deg);
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9));
+    clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%, 10% 50%);
+  }
+  80% {
+    transform: translate(0, 0) scale(0.6) rotate(8deg);
+    opacity: 0.8;
+    filter: blur(4px) drop-shadow(0 0 30px rgba(255, 255, 255, 0.8));
+    clip-path: polygon(10% 0, 50% 20%, 90% 0, 100% 60%, 75% 100%, 25% 100%, 0 60%);
+  }
+  100% {
+    transform: translate(0, 0) scale(0) rotate(12deg);
+    opacity: 0;
+    filter: blur(10px) drop-shadow(0 0 40px rgba(255, 255, 255, 0.7));
+    clip-path: polygon(50% 0, 50% 0, 50% 0, 50% 0, 50% 0, 50% 0);
+  }
+}
+
+@keyframes exitExplode {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0));
+  }
+  20% {
+    transform: scale(1.05) rotate(-4deg);
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4));
+  }
+  40% {
+    transform: scale(0.95) rotate(6deg);
+    filter: drop-shadow(0 0 12px rgba(255, 205, 158, 0.6));
+  }
+  60% {
+    transform: scale(1.1) rotate(-3deg);
+    filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.7));
+  }
+  80% {
+    transform: scale(1.2) rotate(2deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.9));
+  }
+  100% {
+    transform: scale(3.2) rotate(240deg);
+    opacity: 0;
+    filter: blur(6px) drop-shadow(0 0 45px rgba(255, 255, 255, 0.8));
+  }
+}
+
+@keyframes exitFade {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+@keyframes exitSpin {
+  0% {
+    opacity: 1;
+    transform: scale(1) rotateY(0deg);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(0.7) rotateY(540deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0) rotateY(720deg);
+  }
+}
+
+@keyframes exitGlitch {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+    filter: hue-rotate(0deg);
+    clip-path: inset(0 0 0 0);
+  }
+  15% {
+    transform: translate(-18px, -10px) scale(1.02);
+    opacity: 0.8;
+    clip-path: inset(0 0 70% 0);
+  }
+  25% {
+    transform: translate(16px, 6px) scale(0.98);
+    opacity: 1;
+    filter: hue-rotate(-15deg) saturate(1.4);
+    clip-path: inset(40% 0 0 0);
+  }
+  35% {
+    transform: translate(-12px, 8px) scale(1.01);
+    opacity: 0.9;
+    filter: hue-rotate(10deg);
+    clip-path: inset(5% 0 45% 0);
+  }
+  45% {
+    transform: translate(10px, -12px) scale(0.99);
+    opacity: 0.7;
+    clip-path: inset(55% 0 0 0);
+  }
+  55% {
+    transform: translate(-6px, 6px) scale(1);
+    opacity: 1;
+    filter: hue-rotate(-10deg) saturate(1.6);
+    clip-path: inset(0 0 20% 0);
+  }
+  65% {
+    transform: translate(12px, -8px) scale(1.02);
+    opacity: 0.6;
+    clip-path: inset(65% 0 0 0);
+  }
+  100% {
+    transform: translate(0, 0) scale(0.5);
+    opacity: 0;
+    filter: blur(12px) hue-rotate(45deg);
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* Entrance reveal animations - 2-3 seconds (simpler since exit is separate) */
+
+/* Effect 1: Pop In with bounce */
+@keyframes revealImplode {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Effect 2: Explode In from center */
+@keyframes revealExplode {
+  0% {
+    transform: scale(0.3) rotate(-180deg);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.1) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+/* Effect 3: Magic Appear with rotation */
+@keyframes revealMagic {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) rotate(0deg);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.15) rotate(360deg);
+  }
+  90% {
+    transform: scale(0.95) rotate(360deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+/* Effect 4: Spin In reveal */
+@keyframes revealSpin {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotateY(-720deg);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1.1) rotateY(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotateY(0deg);
+  }
+}
+
+/* Effect 5: Materialize from particles */
+@keyframes revealMaterialize {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+    filter: blur(10px);
+  }
+  50% {
+    transform: scale(0.8);
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+  80% {
+    transform: scale(1.1);
+    opacity: 1;
+    filter: blur(0px);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+@keyframes shakeImplode {
+  0% {
+    transform: scale(0.7) rotate(0deg);
+    opacity: 0;
+    filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0));
+  }
+  20% {
+    transform: scale(1.05) rotate(-2deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 15px rgba(250, 190, 255, 0.6));
+  }
+  40% {
+    transform: scale(0.95) rotate(2deg);
+  }
+  60% {
+    transform: scale(1.08) rotate(-1deg);
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
+  }
+  80% {
+    transform: scale(0.98) rotate(1deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0));
+  }
+}
+
+@keyframes shakeExplode {
+  0% {
+    transform: scale(0.5) rotate(-8deg);
+    opacity: 0;
+  }
+  30% {
+    transform: scale(1.1) rotate(4deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.9) rotate(-3deg);
+  }
+  70% {
+    transform: scale(1.15) rotate(2deg);
+    filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.9));
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0));
+  }
+}
+
+@keyframes fadeScaleReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.85);
+    filter: blur(8px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-8px) scale(1.05);
+    filter: blur(2px);
+  }
+  70% {
+    transform: translateY(4px) scale(0.98);
+    filter: blur(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes spinZoomReveal {
+  0% {
+    opacity: 0;
+    transform: perspective(1000px) rotateY(-65deg) scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: perspective(1000px) rotateY(15deg) scale(1.1);
+  }
+  80% {
+    transform: perspective(1000px) rotateY(-5deg) scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(1000px) rotateY(0deg) scale(1);
+  }
+}
+
+@keyframes glitchReveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+    clip-path: inset(0 0 70% 0);
+    filter: blur(8px) saturate(1.4);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1.02) translate(-6px, -4px);
+    clip-path: inset(60% 0 0 0);
+    filter: hue-rotate(-10deg);
+  }
+  30% {
+    transform: scale(1.03) translate(8px, 3px);
+    clip-path: inset(0 0 35% 0);
+    filter: hue-rotate(15deg);
+  }
+  45% {
+    transform: scale(0.98) translate(-4px, 2px);
+    clip-path: inset(10% 0 25% 0);
+  }
+  60% {
+    transform: scale(1.05) translate(3px, -3px);
+    clip-path: inset(0 0 0 0);
+    filter: saturate(1.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translate(0, 0);
+    clip-path: inset(0 0 0 0);
+    filter: none;
+  }
+}
+
+@keyframes confettiFall {
+  0% {
+    transform: translate3d(var(--confetti-shift, 0), -10vh, 0) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  60% {
+    transform: translate3d(calc(var(--confetti-shift, 0) * 0.7), 50vh, 0) rotate(360deg);
+  }
+  100% {
+    transform: translate3d(calc(var(--confetti-shift, 0) + 30px), 110vh, 0) rotate(720deg);
+    opacity: 0;
+  }
+}
+
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
@@ -66,16 +440,164 @@ body {
   }
 }
 
+/* Reveal effect animations - 3-5 seconds */
+@keyframes bounceSlow {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.1);
+  }
+}
+
+@keyframes sparkle {
+  0% {
+    transform: translate(-3px, 0) scale(0.9) rotate(0deg);
+    opacity: 0.35;
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.4));
+  }
+  25% {
+    transform: translate(3px, -4px) scale(1) rotate(90deg);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate(-2px, 2px) scale(1.25) rotate(180deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+  }
+  75% {
+    transform: translate(4px, 3px) scale(1.05) rotate(270deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(-3px, 0) scale(0.95) rotate(360deg);
+    opacity: 0.4;
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.5));
+  }
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.2);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.2);
+  }
+  56% {
+    transform: scale(1);
+  }
+}
+
+@keyframes swing {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px) rotate(-3deg);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px) rotate(3deg);
+  }
+}
+
 .animate-fadeIn {
   animation: fadeIn 0.3s ease-out;
 }
 
 .animate-slideUp {
-  animation: slideUp 0.4s ease-out;
+  animation: slideUp 0.6s ease-out;
+}
+
+/* Exit animations */
+.animate-exitImplode {
+  animation: exitImplode 1.5s ease-in-out forwards;
+}
+
+.animate-exitExplode {
+  animation: exitExplode 1.5s ease-in-out forwards;
+}
+
+.animate-exitFade {
+  animation: exitFade 1.5s ease-in-out forwards;
+}
+
+.animate-exitSpin {
+  animation: exitSpin 1.5s ease-in-out forwards;
+}
+
+.animate-exitGlitch {
+  animation: exitGlitch 1.5s ease-in-out forwards;
+}
+
+/* Reveal animations */
+.animate-shakeImplode {
+  animation: shakeImplode 1.6s ease-out;
+}
+
+.animate-shakeExplode {
+  animation: shakeExplode 1.8s ease-out;
+}
+
+.animate-fadeScaleReveal {
+  animation: fadeScaleReveal 2s ease-out;
+}
+
+.animate-spinZoomReveal {
+  animation: spinZoomReveal 2.2s ease-out;
+}
+
+.animate-glitchReveal {
+  animation: glitchReveal 2.4s ease-out;
 }
 
 .animate-bounce {
   animation: bounce 2s ease-in-out infinite;
+}
+
+/* Custom reveal animations */
+.animate-bounce-slow {
+  animation: bounceSlow 3s ease-in-out infinite;
+}
+
+.animate-sparkle {
+  animation: sparkle 4s steps(5, end) infinite alternate;
+  animation-delay: var(--sparkle-delay, 0s);
+}
+
+.animate-heartbeat {
+  animation: heartbeat 3s ease-in-out infinite;
+}
+
+.animate-swing {
+  animation: swing 5s ease-in-out infinite;
+}
+
+.animate-shake {
+  animation: shake 4s ease-in-out infinite;
 }
 
 .delay-100 {
@@ -88,4 +610,50 @@ body {
 
 .delay-300 {
   animation-delay: 0.3s;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+.delay-700 {
+  animation-delay: 0.7s;
+}
+
+.confetti-wrapper {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 60;
+}
+
+.confetti-piece {
+  position: absolute;
+  top: -10vh;
+  border-radius: 9999px;
+  animation: confettiFall var(--confetti-duration, 2s) ease-out forwards;
+  animation-delay: var(--confetti-delay, 0s);
+  opacity: 0;
+  mix-blend-mode: screen;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+}
+
+.confetti-piece.confetti-pink {
+  background: linear-gradient(180deg, #ffd1dc, #ffa3c0);
+}
+
+.confetti-piece.confetti-sun {
+  background: linear-gradient(180deg, #fff1a3, #ffd37d);
+}
+
+.confetti-piece.confetti-mint {
+  background: linear-gradient(180deg, #c8ffd4, #7fe3b5);
+}
+
+.confetti-piece.confetti-lavender {
+  background: linear-gradient(180deg, #d9ccff, #b99bff);
+}
+
+.confetti-piece.confetti-sky {
+  background: linear-gradient(180deg, #cfe8ff, #8fd3ff);
 }

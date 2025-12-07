@@ -11,6 +11,7 @@ interface DayDetailProps {
 
 export default function DayDetail({ dayData, startDate, onClose }: DayDetailProps) {
   const [isRevealed, setIsRevealed] = useState(false);
+  const [isRevealing, setIsRevealing] = useState(false);
 
   const getDateForDay = (): string => {
     return computeDateForDay(startDate, dayData.day);
@@ -42,34 +43,126 @@ export default function DayDetail({ dayData, startDate, onClose }: DayDetailProp
   };
 
   const handleReveal = () => {
-    setIsRevealed(true);
+    setIsRevealing(true);
+    // Wait for exit animation to complete before showing content
+    setTimeout(() => {
+      setIsRevealed(true);
+    }, 1500); // 1.5 seconds for exit animation
+  };
+
+  const getRevealEffect = () => {
+    // Choose one of 5 different reveal effects based on day number
+    const effectNumber = (dayData.day - 1) % 5;
+
+    const effects = [
+      // Effect 1: Classic bouncing gift (3s) - Exit Implode (1.5s) + Reveal (3s)
+      {
+        emoji: '🎁',
+        pattern: (
+          <>
+            <div className="absolute top-2 left-2 text-6xl animate-bounce-slow delay-100">🎁</div>
+            <div className="absolute bottom-2 right-2 text-6xl animate-bounce-slow delay-300">🎁</div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-8xl animate-bounce-slow">🎁</div>
+          </>
+        ),
+        text: 'Clica aquí per descobrir la sorpresa! ✨',
+        animation: 'animate-bounce-slow',
+        exitAnimation: 'animate-exitImplode',
+        revealAnimation: 'animate-shakeImplode'
+      },
+      // Effect 2: Sparkles and stars (4s) - Exit Explode (1.5s) + Reveal (3.5s)
+      {
+        emoji: '✨',
+        pattern: (
+          <>
+            <div className="absolute top-4 left-4 text-5xl animate-sparkle">⭐</div>
+            <div className="absolute top-4 right-4 text-5xl animate-sparkle delay-200">✨</div>
+            <div className="absolute bottom-4 left-4 text-5xl animate-sparkle delay-300">💫</div>
+            <div className="absolute bottom-4 right-4 text-5xl animate-sparkle delay-500">⭐</div>
+          </>
+        ),
+        text: 'Toca per revelar la màgia! ✨',
+        animation: 'animate-sparkle',
+        exitAnimation: 'animate-exitExplode',
+        revealAnimation: 'animate-shakeExplode'
+      },
+      // Effect 3: Hearts (3s heartbeat) - Exit Fade (1.5s) + Reveal (4s)
+      {
+        emoji: '💝',
+        pattern: (
+          <>
+            <div className="absolute top-3 left-6 text-4xl animate-heartbeat">💕</div>
+            <div className="absolute top-10 right-8 text-5xl animate-heartbeat delay-200">❤️</div>
+            <div className="absolute bottom-8 left-10 text-5xl animate-heartbeat delay-300">💖</div>
+            <div className="absolute bottom-3 right-6 text-4xl animate-heartbeat delay-100">💕</div>
+            <div className="absolute top-1/2 left-1/4 text-3xl animate-heartbeat delay-500">💗</div>
+            <div className="absolute top-1/3 right-1/4 text-3xl animate-heartbeat delay-700">💗</div>
+          </>
+        ),
+        text: 'Obre el teu regal amb amor! 💝',
+        animation: 'animate-heartbeat',
+        exitAnimation: 'animate-exitFade',
+        revealAnimation: 'animate-fadeScaleReveal'
+      },
+      // Effect 4: Party celebration (5s swing) - Exit Spin (1.5s) + Reveal (4.5s)
+      {
+        emoji: '🎉',
+        pattern: (
+          <>
+            <div className="absolute top-2 left-8 text-5xl animate-swing">🎊</div>
+            <div className="absolute top-8 right-6 text-5xl animate-swing delay-200">🎉</div>
+            <div className="absolute bottom-6 left-6 text-5xl animate-swing delay-300">🎈</div>
+            <div className="absolute bottom-2 right-10 text-5xl animate-swing delay-100">🎊</div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-7xl animate-swing delay-500">🎉</div>
+          </>
+        ),
+        text: 'Celebrem junts! Clica aquí! 🎉',
+        animation: 'animate-swing',
+        exitAnimation: 'animate-exitSpin',
+        revealAnimation: 'animate-spinZoomReveal'
+      },
+      // Effect 5: Mystery box (4s shake) - Exit Glitch (1.5s) + Reveal (5s)
+      {
+        emoji: '❓',
+        pattern: (
+          <>
+            <div className="absolute top-4 left-8 text-6xl opacity-30 animate-shake">❓</div>
+            <div className="absolute top-12 right-10 text-6xl opacity-30 animate-shake delay-200">❓</div>
+            <div className="absolute bottom-10 left-12 text-6xl opacity-30 animate-shake delay-300">❓</div>
+            <div className="absolute bottom-4 right-8 text-6xl opacity-30 animate-shake delay-500">❓</div>
+          </>
+        ),
+        text: 'Què t\'espera avui? Descobreix-ho! 🤔',
+        animation: 'animate-shake',
+        exitAnimation: 'animate-exitGlitch',
+        revealAnimation: 'animate-glitchReveal'
+      }
+    ];
+
+    return effects[effectNumber];
   };
 
   const renderContent = () => {
+    const effect = getRevealEffect();
+
     if (!isRevealed) {
-      // Show mystery box before reveal
       return (
         <div
           onClick={handleReveal}
-          className="cursor-pointer transform transition-all duration-300 hover:scale-105"
+          className={`cursor-pointer transform transition-all duration-300 hover:scale-105 ${isRevealing ? effect.exitAnimation : ''}`}
         >
-          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-8 sm:p-10 shadow-xl border-4 border-white relative overflow-hidden`}>
-            {/* Mystery pattern */}
+          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl py-8 sm:p-10 shadow-xl border-4 border-white relative overflow-hidden`}>
+            {/* Mystery pattern - different for each effect */}
             <div className="absolute inset-0 opacity-10">
-              <div className="absolute top-2 left-2 text-6xl">🎁</div>
-              <div className="absolute bottom-2 right-2 text-6xl">🎁</div>
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-8xl">🎁</div>
+              {effect.pattern}
             </div>
 
             {/* Click to reveal text */}
             <div className="relative z-10 text-center space-y-4">
-              <div className="text-6xl animate-bounce">🎁</div>
+              <div className={`text-6xl ${effect.animation}`}>{effect.emoji}</div>
               <h4 className="font-bold text-2xl text-white drop-shadow-lg">
-                Fes clic per descobrir la sorpresa!
+                {effect.text}
               </h4>
-              <p className="text-white/90 text-lg">
-                ✨ Toca aquí ✨
-              </p>
             </div>
           </div>
         </div>
@@ -80,7 +173,7 @@ export default function DayDetail({ dayData, startDate, onClose }: DayDetailProp
     switch (dayData.type) {
       case 'clue':
         return (
-          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-5 sm:p-6 shadow-xl border-4 border-white animate-slideUp`}>
+          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-5 sm:p-6 shadow-xl border-4 border-white ${effect.revealAnimation}`}>
             <div className="flex flex-col sm:flex-row items-start gap-4">
               <div className="shrink-0 w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl shadow-lg">
                 🎁
@@ -99,7 +192,7 @@ export default function DayDetail({ dayData, startDate, onClose }: DayDetailProp
 
       case 'audio':
         return (
-          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-6 sm:p-8 shadow-xl border-4 border-white animate-slideUp`}>
+          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-6 sm:p-8 shadow-xl border-4 border-white ${effect.revealAnimation}`}>
             <div className="flex flex-col items-center gap-6">
               <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-5xl shadow-lg">
                 🎵
@@ -125,7 +218,7 @@ export default function DayDetail({ dayData, startDate, onClose }: DayDetailProp
 
       case 'video':
         return (
-          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-6 sm:p-8 shadow-xl border-4 border-white animate-slideUp`}>
+          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-6 sm:p-8 shadow-xl border-4 border-white ${effect.revealAnimation}`}>
             <div className="flex flex-col items-center gap-6">
               <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-5xl shadow-lg">
                 🎬
@@ -152,7 +245,7 @@ export default function DayDetail({ dayData, startDate, onClose }: DayDetailProp
 
       case 'virtual':
         return (
-          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-6 sm:p-8 shadow-xl border-4 border-white animate-slideUp`}>
+          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-6 sm:p-8 shadow-xl border-4 border-white ${effect.revealAnimation}`}>
             <div className="flex flex-col items-center gap-6">
               <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-5xl shadow-lg">
                 🌟
