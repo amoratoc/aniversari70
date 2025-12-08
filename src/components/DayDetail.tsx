@@ -275,11 +275,11 @@ export default function DayDetail({ dayData, startDate, onClose }: DayDetailProp
                 🌟
               </div>
               <div className="w-full text-center">
-                <h4 className="font-bold text-xl text-white drop-shadow mb-4">
+                {/* <h4 className="font-bold text-xl text-white drop-shadow mb-4">
                   Experiència virtual
-                </h4>
+                </h4> */}
                 <p className="text-stone-800 text-lg">
-                  Contingut virtual pròximament...
+                  {dayData.clue}
                 </p>
               </div>
             </div>

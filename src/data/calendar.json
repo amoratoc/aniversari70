@@ -2,15 +2,15 @@
   "title": "70 Dies celebrant 70 anys",
   "subtitle": "Per la millor mamá del món",
   "buttonText": "✨ Què toca avui? ✨",
-  "startDate": "2025-12-03",
+  "startDate": "2025-12-08",
   "days": [
     {
       "day": 1,
-      "title": "Feliç aniversari, mamà!",
-      "type": "clue",
-      "clue": "Busca al primer lloc on prens el teu cafè cada matí. Allà trobaràs una sorpresa especial.",
+      "title": "Què millor que per començar aquesta cel·lebració...",
+      "type": "virtual",
+      "clue": "Et posis un bon vestit per disfrutar a les 14.45h del menú arrels al restaurant Semproniana, col·laborant així també amb la fundació Arrels.",
       "image": null,
-      "outcome": "Un bonic marc de fotos amb una foto nostra."
+      "outcome": "Menu arrels al restaurant"
     },
     {
       "day": 2,
