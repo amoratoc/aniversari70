@@ -14,10 +14,11 @@
     },
     {
       "day": 2,
-      "title": "Un missatge especial per tuuuu",
-      "type": "audio",
-      "path": "/assets/audios/prova.m4a",
-      "image": null
+      "title": "Fred, fred, calent, calent",
+      "clue": "Busca la sorpresa en el lloc més fred de la casa",
+      "image": null,
+      "type": "clue",
+      "outcome": "Una manta elèctrica gran i suau per no tenir fred mai més"
     },
     {
       "day": 3,
