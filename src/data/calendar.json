@@ -22,10 +22,11 @@
     },
     {
       "day": 3,
-      "title": "Moments per recordar",
-      "type": "video",
-      "path": "/assets/videos/prova.mp4",
-      "image": null
+      "title": "Com ens agradava quan se'ns queien les dents...",
+      "clue": "On posaves la dent quan volies que vingués el Ratoncito Pérez hi trobaràs la sorpresa d'avui",
+      "image": null,
+      "type": "clue",
+      "outcome": "Un cor brodat amb molt d'amor"
     },
     {
       "day": 4,
@@ -87,10 +88,10 @@
     },
     {
       "day": 12,
-      "title": "Bellesa natural",
-      "clue": "Al teu mirall preferit trobaràs alguna cosa que et farà brillar encara més.",
-      "image": null,
-      "type": "clue"
+      "title": "Moments per recordar",
+      "type": "video",
+      "path": "/assets/videos/prova.mp4",
+      "image": null
     },
     {
       "day": 13,
