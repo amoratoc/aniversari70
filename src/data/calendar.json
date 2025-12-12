@@ -38,11 +38,11 @@
     },
     {
       "day": 5,
-      "title": "Aroma especial",
-      "clue": "On guardes les teves espècies favorites, trobaràs alguna cosa dolça.",
+      "title": "Perquè puguis disfrutar d'un bon Hygge",
+      "clue": "Mira on el temps no té pressa, darrere del rellotge s'amaga una promesa; al moble del costat de la taula, sense gaire destresa, t'hi espera una llum de Nadal, petita però encesa.",
       "image": null,
       "type": "clue",
-      "outcome": "Un conjunt de tes aromatitzats per a les teves tardes de relax."
+      "outcome": "Una espelmeta nadalenca"
     },
     {
       "day": 6,
