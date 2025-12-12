@@ -30,11 +30,11 @@
     },
     {
       "day": 4,
-      "title": "Tresor a casa",
-      "clue": "Revisa el calaix on guardes les teves coses més preuades. Hi ha una sorpresa esperant.",
+      "title": "Cuinetes",
+      "clue": "Entre receptes de cuina hi ha una sorpresa esperant.",
       "image": null,
       "type": "clue",
-      "outcome": "Un collaret amb un penjoll que simbolitza la nostra família."
+      "outcome": "Uns Ferreros per endolcir el dia."
     },
     {
       "day": 5,
