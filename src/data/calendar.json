@@ -46,10 +46,11 @@
     },
     {
       "day": 6,
-      "title": "Lectura del dia",
-      "clue": "Entre els teus llibres favorits n'hi ha un que avui té un marcador molt especial.",
+      "title": "01101",
+      "clue": "On trobes els patrons per teixir, lo virtual es torna real, per gaudir d'una sorpresa visual",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": "Fotos dels quatre"
     },
     {
       "day": 7,
