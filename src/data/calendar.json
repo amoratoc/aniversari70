@@ -57,14 +57,16 @@
       "title": "Posem llum a la foscor",
       "clue": "A sobre els llibres grans, savis i amb coneixements de la A a la Z, hi ha la sorpresa, tot allò que t'agrada, sense límits, gràcies a la llumeta",
       "image": null,
-      "type": "Una llum per penjar al coll i poder llegir, teixir, o fer sudokus"
+      "type": "clue",
+      "outcome": "Una llum per penjar al coll i poder llegir, teixir, o fer sudokus"
     },
     {
       "day": 8,
       "title": "Dolç, dolç...",
       "clue": "Busca on de petits guardàvem els bolis, allà hi trobaràs la sorpresa d'avui.",
       "image": null,
-      "type": "Xocolata boníssima de Simon Coll"
+      "type": "clue",
+      "outcome": "Xocolata boníssima de Simon Coll"
     },
     {
       "day": 9,
