@@ -73,21 +73,24 @@
       "title": "Tresor musical",
       "clue": "Al costat de la teva col·lecció de música trobaràs una melodia especial.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 10,
       "title": "Racó acollidor",
       "clue": "Al teu lloc preferit per descansar hi ha una sorpresa còmoda esperant-te.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 11,
       "title": "Moments dolços",
       "clue": "Mira on guardes les teves galetes favorites. Hi ha una dolça sorpresa.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 12,
@@ -101,308 +104,352 @@
       "title": "Caliu de llar",
       "clue": "Al lloc més càlid de casa, on ens reunim en família, hi ha un regal especial.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 14,
       "title": "Petits detalls",
       "clue": "A la teva bossa preferida hi ha una petita sorpresa amagada.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 15,
       "title": "Temps de cuina",
       "clue": "Al calaix dels teus estris de cuina favorits trobaràs alguna cosa útil i especial.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 16,
       "title": "Racons secrets",
       "clue": "Al lloc on guardes les teves joies més estimades hi ha un nou tresor.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 17,
       "title": "Passejades",
       "clue": "Busca a prop de les teves sabates de passejar. Hi ha una sorpresa per les teves caminades.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 18,
       "title": "Aromes de casa",
       "clue": "On guardes les teves espelmes o ambientadors preferits trobaràs un nou aroma.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 19,
       "title": "Moments de lectura",
       "clue": "A la teva taula de nit hi ha alguna cosa nova per acompanyar les teves lectures.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 20,
       "title": "Creativitat",
       "clue": "Si tens aficions manuals, busca entre els teus materials. Hi ha una sorpresa creativa.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 21,
       "title": "Finestra al món",
       "clue": "A prop de la teva finestra favorita trobaràs alguna cosa per gaudir de les vistes.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 22,
       "title": "Suavitat",
       "clue": "Entre les teves mantes i coixins favorits hi ha una sorpresa suau i confortable.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 23,
       "title": "Temps de te",
       "clue": "On guardes les teves infusions preferides trobaràs una nova varietat per provar.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 24,
       "title": "Novetats",
       "clue": "Al rebedor de casa, on deixes les claus, hi ha alguna cosa nova esperant-te.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 25,
       "title": "Nadal màgic",
       "clue": "Entre les decoracions nadalenques hi ha un regal especial per a tu.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 26,
       "title": "Dies de festa",
       "clue": "Busca a la nevera o la despensa. Hi ha una delícia esperant-te.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 27,
       "title": "Estil personal",
       "clue": "Al teu armari, entre la teva roba preferida, hi ha un complement especial.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 28,
       "title": "Cura personal",
       "clue": "On guardes les teves cremes i cosmètics trobaràs un nou producte per a tu.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 29,
       "title": "Moments especials",
       "clue": "A la teva capsa de records i fotografies hi ha alguna cosa nova per afegir.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 30,
       "title": "Any nou",
       "clue": "Per celebrar els últims dies de l'any, busca on guardes les teves copes. Hi ha una sorpresa.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 31,
       "title": "Últim dia de l'any",
       "clue": "Avui és especial. Busca a la taula del menjador, hi ha alguna cosa per celebrar.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 32,
       "title": "Bon any nou!",
       "clue": "Començant l'any, busca al lloc on planifiques els teus dies. Hi ha una sorpresa organitzada.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 33,
       "title": "Propòsits",
       "clue": "Per ajudar-te amb els teus propòsits d'any nou, hi ha un regal al teu escriptori.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 34,
       "title": "Energia positiva",
       "clue": "Busca on solen estar les teves coses del dia a dia. Hi ha alguna cosa que t'omplirà d'energia.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 35,
       "title": "Calidesa d'hivern",
       "clue": "On guardes els teus complements d'hivern trobaràs alguna cosa per combatre el fred.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 36,
       "title": "Petits luxes",
       "clue": "Al bany, a prop de la dutxa o la banyera, hi ha un petit luxe esperant-te.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 37,
       "title": "Dolçor",
       "clue": "On solen estar les postres o dolços a casa hi ha alguna cosa deliciosa per a tu.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 38,
       "title": "Entreteniment",
       "clue": "A prop del televisor o on passes les estones d'entreteniment hi ha una sorpresa.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 39,
       "title": "Salut i benestar",
       "clue": "On guardes els teus suplements o vitamines trobaràs alguna cosa beneficiosa.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 40,
       "title": "Memòries",
       "clue": "Busca entre els teus objectes que guarden memòries. Hi ha un nou record per afegir.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 41,
       "title": "Llum i color",
       "clue": "A prop d'una font de llum a casa trobaràs alguna cosa que il·luminarà els teus dies.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 42,
       "title": "Naturalesa",
       "clue": "Si tens plantes o un jardí, busca entre elles. Hi ha un regal natural per a tu.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 43,
       "title": "Confort",
       "clue": "A la teva butaca o sofà preferit hi ha alguna cosa per fer-ho encara més confortable.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 44,
       "title": "Organització",
       "clue": "On guardes els teus papers importants o documents trobaràs alguna cosa pràctica.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 45,
       "title": "Art i cultura",
       "clue": "A prop dels teus objectes decoratius o artístics hi ha una nova peça per admirar.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 46,
       "title": "Temps en família",
       "clue": "Al lloc on ens reunim per menjar en família hi ha una sorpresa compartida.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 47,
       "title": "Tecnologia amiga",
       "clue": "A prop del teu telèfon o tauleta hi ha un accessori que et facilitarà la vida.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 48,
       "title": "Sabors",
       "clue": "A la cuina, entre els ingredients especials, trobaràs un nou sabor per descobrir.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 49,
       "title": "Descans",
       "clue": "Al teu dormitori, al lloc on descanses, hi ha alguna cosa per millorar el teu son.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 50,
       "title": "Mig camí!",
       "clue": "Ja portes 50 dies! Busca on celebres els moments especials. Hi ha un regal celebratiu.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 51,
       "title": "Seguim endavant",
       "clue": "A l'entrada de casa hi ha alguna cosa per acompanyar-te en les teves sortides.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 52,
       "title": "Hidratació",
       "clue": "On guardes les teves begudes preferides trobaràs alguna cosa refrescant.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 53,
       "title": "Detalls que compten",
       "clue": "A un calaix que obris sovint hi ha un petit detall que t'encantarà.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 54,
       "title": "Aromes frescos",
       "clue": "A la nevera o on guardes fruites fresques hi ha una sorpresa aromàtica.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 55,
       "title": "Estils",
       "clue": "On guardes els teus complements i accessoris trobaràs alguna cosa elegant.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 56,
       "title": "Pràctic i útil",
       "clue": "Al garatge o traster hi ha una eina o objecte pràctic que necessitaves.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 57,
@@ -416,91 +463,104 @@
       "title": "Calidesa",
       "clue": "On guardes les mantes o tovalloles hi ha alguna cosa suau i càlida.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 59,
       "title": "Música",
       "clue": "Si tens instruments o equip de música, busca allà. Hi ha alguna cosa melòdica.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 60,
       "title": "Gairebé arribant!",
       "clue": "Només falten 10 dies! Al saló hi ha un regal especial per celebrar-ho.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 61,
       "title": "Racons màgics",
       "clue": "Al racó més acollidor de casa hi ha una sorpresa amagada.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 62,
       "title": "Estimar-se",
       "clue": "On guardes les coses per cuidar-te hi ha un nou producte de bellesa.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 63,
       "title": "Sabors del món",
       "clue": "A la despensa, entre les coses especials, hi ha un ingredient exòtic.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 64,
       "title": "Moments de pau",
       "clue": "On practiques meditació o relaxació hi ha alguna cosa que t'ajudarà.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 65,
       "title": "5 dies més!",
       "clue": "Estem a la recta final! Al rebedor hi ha un regal emocionant.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 66,
       "title": "Preparant el final",
       "clue": "A la cuina hi ha ingredients per preparar alguna cosa deliciosa.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 67,
       "title": "Quasi, quasi...",
       "clue": "Al teu lloc de treball o manualitats hi ha una sorpresa creativa.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 68,
       "title": "Penúltim dia!",
       "clue": "Al dormitori, a prop del teu armari, hi ha alguna cosa especial.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 69,
       "title": "Últim dia de sorpreses",
       "clue": "Demà és el gran dia! Avui busca al saló. Hi ha un regal emocionant.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     },
     {
       "day": 70,
       "title": "70 dies completats!",
       "clue": "Ho has aconseguit! La sorpresa final et porta al lloc més especial de casa, on estem tots esperant-te per celebrar aquests 70 dies meravellosos. T'estimem!",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": ""
     }
   ]
 }
