@@ -70,11 +70,11 @@
     },
     {
       "day": 9,
-      "title": "Tresor musical",
-      "clue": "Al costat de la teva col·lecció de música trobaràs una melodia especial.",
+      "title": "Cuinetes",
+      "clue": "Estic preparant el sopar i necessito un ganivet dels grans. On els guardes hi trobaràs la sorpresa d'avui.",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Unes llengues de fusta noves per cuinar millor"
     },
     {
       "day": 10,
