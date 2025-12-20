@@ -86,18 +86,19 @@
     },
     {
       "day": 11,
-      "title": "A taulaaa!",
-      "clue": "Hora de parar la taula amb la millor coberteria.",
+      "title": "Moments dolços",
+      "clue": "Mira on guardes les teves galetes favorites. Hi ha una dolça sorpresa.",
       "image": null,
       "type": "clue",
-      "outcome": "Uns ferreros per endolcir el dia"
+      "outcome": ""
     },
     {
       "day": 12,
-      "title": "Moments per recordar",
-      "type": "video",
-      "path": "/assets/videos/prova.mp4",
-      "image": null
+      "title": "És important tenir la documentació ordenada",
+      "clue": "A on miraría l'Ignasi si li preguntem quin any caduca el passaport? Allà hi trobaràs una sorpreseta per avui.",
+      "image": null,
+      "type": "clue",
+      "outcome": "Una caixeta cilíndrica per guardar les agulles"
     },
     {
       "day": 13,
@@ -157,11 +158,10 @@
     },
     {
       "day": 20,
-      "title": "Creativitat",
-      "clue": "Si tens aficions manuals, busca entre els teus materials. Hi ha una sorpresa creativa.",
-      "image": null,
-      "type": "clue",
-      "outcome": ""
+      "title": "Moments per recordar",
+      "type": "video",
+      "path": "/assets/videos/prova.mp4",
+      "image": null
     },
     {
       "day": 21,
