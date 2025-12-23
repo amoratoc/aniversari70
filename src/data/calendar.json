@@ -118,11 +118,11 @@
     },
     {
       "day": 15,
-      "title": "Temps de cuina",
-      "clue": "Al calaix dels teus estris de cuina favorits trobaràs alguna cosa útil i especial.",
+      "title": "Una medecina que ho cura tot",
+      "clue": "Amb les medicines trobaràs la dosis de felicitat d'avui.",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Unes xocolates molt bones"
     },
     {
       "day": 16,
