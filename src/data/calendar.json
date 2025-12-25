@@ -142,11 +142,11 @@
     },
     {
       "day": 18,
-      "title": "Aromes de casa",
-      "clue": "On guardes les teves espelmes o ambientadors preferits trobaràs un nou aroma.",
+      "title": "Sant Esteve il·luminat",
+      "clue": "Espectacle Luminiscence avui a les 20h a l'església de Santa Maria del Pi",
       "image": null,
-      "type": "clue",
-      "outcome": ""
+      "type": "virtual",
+      "outcome": "Espectacle Luminiscence a l'església de Santa Maria del Pi"
     },
     {
       "day": 19,
