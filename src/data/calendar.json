@@ -158,10 +158,11 @@
     },
     {
       "day": 20,
-      "title": "Moments per recordar",
-      "type": "video",
-      "path": "/assets/videos/prova.mp4",
-      "image": null
+      "title": "Memories de professora",
+      "clue": "Diuen que apuntar-se les coses va bé per recordar-les, avui la teva sorpresa t'espera on guardes la ceràmica pels dinars especials.",
+      "image": null,
+      "type": "clue",
+      "outcome": "Unes pissarres magnetiques per apuntar coses importants"
     },
     {
       "day": 21,
@@ -556,11 +557,10 @@
     },
     {
       "day": 70,
-      "title": "70 dies completats!",
-      "clue": "Ho has aconseguit! La sorpresa final et porta al lloc més especial de casa, on estem tots esperant-te per celebrar aquests 70 dies meravellosos. T'estimem!",
-      "image": null,
-      "type": "clue",
-      "outcome": ""
+      "title": "Moments per recordar",
+      "type": "video",
+      "path": "/assets/videos/prova.mp4",
+      "image": null
     }
   ]
 }
