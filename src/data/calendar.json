@@ -166,11 +166,11 @@
     },
     {
       "day": 21,
-      "title": "Finestra al món",
-      "clue": "A prop de la teva finestra favorita trobaràs alguna cosa per gaudir de les vistes.",
+      "title": "Records de Dinamarca",
+      "clue": "Si te'l vols allissar ben allissat trobaràs lo que busques.",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "regalèssia danesa"
     },
     {
       "day": 22,
