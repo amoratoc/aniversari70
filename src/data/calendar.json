@@ -182,11 +182,11 @@
     },
     {
       "day": 23,
-      "title": "Temps de te",
-      "clue": "On guardes les teves infusions preferides trobaràs una nova varietat per provar.",
+      "title": "L'últim dia de l'any!",
+      "clue": "Coure, coure, coure... què hi ha de coure a casa? El regalet d'avui està a dins.",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Un localitzador"
     },
     {
       "day": 24,
