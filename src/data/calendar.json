@@ -190,11 +190,11 @@
     },
     {
       "day": 24,
-      "title": "Novetats",
-      "clue": "Al rebedor de casa, on deixes les claus, hi ha alguna cosa nova esperant-te.",
+      "title": "Any nou...",
+      "clue": "Melena nova! Tens reservat el dia 8 de gener a les 12h una sessió de perruqueria al Manolo, amb rentat, tallat i més! Ja pots apuntar-t'ho a l'agenda!",
       "image": null,
-      "type": "clue",
-      "outcome": ""
+      "type": "virtual",
+      "outcome": "El 8/1/26 - Sessió de perruqueria al Manolo, amb rentat, tallat i sorpresa"
     },
     {
       "day": 25,
