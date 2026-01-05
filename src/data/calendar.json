@@ -222,11 +222,11 @@
     },
     {
       "day": 28,
-      "title": "Encara no",
-      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
+      "title": "Que no faltin",
+      "clue": "No m'agrada això d'anar a dormir amb el cabell mullat, ho haurem d'arreglar.",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Uns ferreros"
     },
     {
       "day": 29,
