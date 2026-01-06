@@ -90,7 +90,7 @@
       "clue": "Mira on guardes les teves galetes favorites. Hi ha una dolça sorpresa.",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Uns Ferreros"
     },
     {
       "day": 12,
@@ -138,7 +138,7 @@
       "clue": "Ganesha custodia la sopresa d'avui",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Agenda del 2026 personalitzada"
     },
     {
       "day": 18,
@@ -234,15 +234,15 @@
       "clue": "Avui no hi ha pista, doncs els Reis Mags hauràs d'esperar, i un objecte que hi ha a la vista, una vida se li atorgarà",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Una Yucca pel menjador"
     },
     {
       "day": 30,
-      "title": "Encara no",
-      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
+      "title": "Relax",
+      "clue": "On el sol es pon i es treballa molt, sobre el temple hindú, la sorpresa s'hi ha amagat!",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Mascareta per fer amb la Ju i la Maca"
     },
     {
       "day": 31,
@@ -250,7 +250,7 @@
       "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Fotos d'Alex, Maca, Ignasi i Montse"
     },
     {
       "day": 32,
