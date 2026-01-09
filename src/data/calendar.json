@@ -239,7 +239,7 @@
     {
       "day": 30,
       "title": "Relax",
-      "clue": "On el sol es pon i es treballa molt, sobre el temple hindú, la sorpresa s'hi ha amagat!",
+      "clue": "On el sol es lleva i es treballa molt, sobre el temple hindú, la sorpresa s'hi ha amagat!",
       "image": null,
       "type": "clue",
       "outcome": "Mascareta per fer amb la Ju i la Maca"
@@ -250,15 +250,15 @@
       "clue": "Entre síndries de Palestina, la sorpresa s'hi endevina",
       "image": null,
       "type": "clue",
-      "outcome": "Fotos d'Alex, Maca, Ignasi i Montse"
+      "outcome": "Album per posar-hi les fotos"
     },
     {
       "day": 32,
-      "title": "Encara no",
-      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
+      "title": "Records",
+      "clue": "Entre síndries de Palestina, la sorpresa s'hi endevina",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Fotos dels 5"
     },
     {
       "day": 33,
