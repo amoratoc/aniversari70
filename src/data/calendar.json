@@ -262,11 +262,11 @@
     },
     {
       "day": 33,
-      "title": "Encara no",
-      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
+      "title": "On és la pilota?",
+      "clue": "On la Kavi sovint necessita ajuda per agafar la pilota hi ha la sorpresa d'avui",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Mitjons calentets"
     },
     {
       "day": 34,
