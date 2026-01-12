@@ -278,11 +278,11 @@
     },
     {
       "day": 35,
-      "title": "Encara no",
-      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
+      "title": "Equador",
+      "clue": "Un remei no oficial es troba on guardes els remeis tradicionals",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Ferreros"
     },
     {
       "day": 36,
