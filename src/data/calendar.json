@@ -286,24 +286,24 @@
     },
     {
       "day": 36,
-      "title": "Encara no",
-      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
+      "title": "No sento res",
+      "clue": "A la caixa on es troba el silenci en forma de protecció, hi trobaràs la sorpresa si busques a amb atenció",
       "image": null,
       "type": "clue",
       "outcome": ""
     },
     {
       "day": 37,
-      "title": "Encara no",
-      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
+      "title": "Ambientem",
+      "clue": "Entre espelmes i encensos s'hi amaguen secrets intensos",
       "image": null,
       "type": "clue",
       "outcome": ""
     },
     {
       "day": 38,
-      "title": "Encara no",
-      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
+      "title": "Treballant de sol a sol",
+      "clue": "Per on surt el sol i es treballa molt, la sorpresa està amagada sota un protector del sol",
       "image": null,
       "type": "clue",
       "outcome": ""
