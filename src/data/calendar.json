@@ -310,11 +310,11 @@
     },
     {
       "day": 39,
-      "title": "Encara no",
-      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
+      "title": "Este banco está ocupado...",
+      "clue": "On es gaudeixen àpats i converses, algunes dures com un morter, però sempre acaben amb un dolç compartit, i on és la sorpresa ja t'ho he dit!",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Ferreros boníssims"
     },
     {
       "day": 40,
