@@ -334,8 +334,8 @@
     },
     {
       "day": 42,
-      "title": "Encara no",
-      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
+      "title": "Sweet Denmark",
+      "clue": "Aquesta serà difícil. Si vols la teva sorpresa, dins d'un pot la trobaràs, si es cau a terra es trencaria y una pista pot ser BICROM o POTAS.",
       "image": null,
       "type": "clue",
       "outcome": "Xocolates daneses"
