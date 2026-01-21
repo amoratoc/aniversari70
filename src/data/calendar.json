@@ -350,8 +350,8 @@
     },
     {
       "day": 44,
-      "title": "Encara no",
-      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
+      "title": "Oro parece, plata Sí es",
+      "clue": "Si amb la reina prens un tè, obtindràs un dolç que et farà bé",
       "image": null,
       "type": "clue",
       "outcome": "Ferreros bonissims"
