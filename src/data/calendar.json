@@ -374,8 +374,8 @@
     },
     {
       "day": 47,
-      "title": "Encara no",
-      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
+      "title": "Xin-xin",
+      "clue": "Si vols trobar el regal amagat, pensa on el vidre espera el brindis alçat",
       "image": null,
       "type": "clue",
       "outcome": "Un kit de ganxet d'una planta penjant"
@@ -386,7 +386,7 @@
       "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
       "image": null,
       "type": "clue",
-      "outcome": "Fotografies per afegir a l'àlbum"
+      "outcome": "Crema per cuidar la pell"
     },
     {
       "day": 49,
@@ -402,7 +402,7 @@
       "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
       "image": null,
       "type": "clue",
-      "outcome": "Crema per cuidar la pell"
+      "outcome": ""
     },
     {
       "day": 51,
