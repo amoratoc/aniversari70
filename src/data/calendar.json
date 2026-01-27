@@ -398,11 +398,11 @@
     },
     {
       "day": 50,
-      "title": "Encara no",
-      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
+      "title": "Per recordar",
+      "clue": "En un lloc en de pas, entre fotos i estratègies per aprimar, la sorpresa d'avui hi trobaràs",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Fotos Montse i Ignasi"
     },
     {
       "day": 51,
