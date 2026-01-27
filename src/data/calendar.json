@@ -406,19 +406,19 @@
     },
     {
       "day": 51,
-      "title": "Encara no",
-      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
+      "title": "011010",
+      "clue": "Per on surt el sol i s'ajunten pedaços, on les aspes giren per assegurar un bon rendiment tecnològic hi trobaràs la sorpresa d'avui",
       "image": null,
       "type": "clue",
       "outcome": "Un kit més avançat de brodat"
     },
     {
       "day": 52,
-      "title": "Encara no",
-      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
+      "title": "Tè de les 5",
+      "clue": "Només portant el tè a la reina podràs gaudir de la sorpresa d'avui",
       "image": null,
       "type": "clue",
-      "outcome": "Fotografies per afegir a l'àlbum"
+      "outcome": "Xocolata bona"
     },
     {
       "day": 53,
@@ -426,7 +426,7 @@
       "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Kit aquarel·la"
     },
     {
       "day": 54,
@@ -434,7 +434,7 @@
       "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Fotografies per l'àlbum"
     },
     {
       "day": 55,
@@ -442,7 +442,7 @@
       "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Per aguantar el mòbil"
     },
     {
       "day": 56,
@@ -450,7 +450,7 @@
       "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Ferreros"
     },
     {
       "day": 57,
