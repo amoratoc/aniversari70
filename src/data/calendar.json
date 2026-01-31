@@ -430,19 +430,19 @@
     },
     {
       "day": 54,
-      "title": "Entre parets i estanteries que guien",
-      "clue": "Entre factures i llibres, darrera on els fils es creuen amb paciència, allà s’hi amaga la sorpresa, posa-hi atenció i consciència.",
-      "image": null,
-      "type": "clue",
-      "outcome": "Fotografies per l'àlbum"
-    },
-    {
-      "day": 55,
       "title": "On acaba el dia",
       "clue": "Al costat d'on somies i tanques els ulls, hi ha un petit caos que mai s'endreça, dins la fusta i records barregats, entre tresors oblidats, t'espera la sorpresa",
       "image": null,
       "type": "clue",
       "outcome": "Per aguantar el mòbil"
+    },
+    {
+      "day": 55,
+      "title": "Entre parets i estanteries que guien",
+      "clue": "Entre factures i llibres, darrera on els fils es creuen amb paciència, allà s’hi amaga la sorpresa, posa-hi atenció i consciència.",
+      "image": null,
+      "type": "clue",
+      "outcome": "Fotografies per l'àlbum"
     },
     {
       "day": 56,
