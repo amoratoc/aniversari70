@@ -446,8 +446,8 @@
     },
     {
       "day": 56,
-      "title": "Encara no",
-      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
+      "title": "On s'amaga la memòria",
+      "clue": "A la sala on tot passa i tot es veu, una foto d’un viatge guarda un secret seu. No miris només al davant: gira el record, que al darrere s’hi amaga el tresor.",
       "image": null,
       "type": "clue",
       "outcome": "Ferreros"
