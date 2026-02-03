@@ -1,4 +1,4 @@
-{
+//{
   "title": "70 Dies celebrant 70 anys",
   "subtitle": "Per la millor mamá del món",
   "buttonText": "✨ Què toca avui? ✨",
@@ -454,10 +454,11 @@
     },
     {
       "day": 57,
-      "title": "Encara no",
-      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
+      "title": "Sota els somnis",
+      "clue": "On les passes cansades queden guardades, sota on el cos reposa, la sorpresa s’hi posa.",
       "image": null,
-      "type": "clue"
+      "type": "clue",
+      "outcome": "Peses per guanyar força"
     },
     {
       "day": 58,
