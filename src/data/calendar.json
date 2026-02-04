@@ -462,19 +462,19 @@
     },
     {
       "day": 58,
+      "title": "Rolling, rolling..",
+      "clue": "Per on surt el sol i es treballa molt, al costat d'una gran esfera, la gran sorpresa t'espera",
+      "image": null,
+      "type": "clue",
+      "outcome": "Un carro de la compra"
+    },
+    {
+      "day": 59,
       "title": "El dia que es va di Sí",
       "clue": "Entre pàgines plenes de mirades, somriures, promeses i mans enllaçades, busca on el temps es va autrar, és on la sorpresa trobar",
       "image": null,
       "type": "clue",
       "outcome": "Un llibre de brodat"
-    },
-    {
-      "day": 59,
-      "title": "Encara no",
-      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
-      "image": null,
-      "type": "clue",
-      "outcome": ""
     },
     {
       "day": 60,
