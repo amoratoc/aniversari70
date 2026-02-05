@@ -470,27 +470,27 @@
     },
     {
       "day": 59,
+      "title": "Plop!",
+      "clue": "On seus moltes vegades una bona estona, dins d'un calaix la sorpresa t'enraona",
+      "image": null,
+      "type": "clue",
+      "outcome": "celo bonic per les fotos"
+    },
+    {
+      "day": 60,
       "title": "Encara no",
       "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Ordinador"
     },
     {
-      "day": 60,
+      "day": 61,
       "title": "El dia que es va di Sí",
       "clue": "Entre pàgines plenes de mirades, somriures, promeses i mans enllaçades, busca on el temps es va autrar, és on la sorpresa trobar",
       "image": null,
       "type": "clue",
       "outcome": "Un llibre de brodat"
-    },
-    {
-      "day": 61,
-      "title": "Encara no",
-      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
-      "image": null,
-      "type": "clue",
-      "outcome": ""
     },
     {
       "day": 62,
