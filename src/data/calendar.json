@@ -486,11 +486,11 @@
     },
     {
       "day": 61,
-      "title": "El dia que es va di Sí",
-      "clue": "Entre pàgines plenes de mirades, somriures, promeses i mans enllaçades, busca on el temps es va autrar, és on la sorpresa trobar",
+      "title": "Encara no",
+      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
       "image": null,
       "type": "clue",
-      "outcome": "Un llibre de brodat"
+      "outcome": "Xocos"
     },
     {
       "day": 62,
@@ -498,7 +498,7 @@
       "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Fotos"
     },
     {
       "day": 63,
@@ -506,7 +506,7 @@
       "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "punch needle"
     },
     {
       "day": 64,
@@ -514,7 +514,7 @@
       "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Targetes ganxet"
     },
     {
       "day": 65,
@@ -530,7 +530,7 @@
       "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Funda ordinador"
     },
     {
       "day": 67,
@@ -538,15 +538,15 @@
       "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Una de les altres xocos"
     },
     {
       "day": 68,
-      "title": "Penúltim dia!",
-      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
+      "title": "El dia que es va di Sí",
+      "clue": "Entre pàgines plenes de mirades, somriures, promeses i mans enllaçades, busca on el temps es va autrar, és on la sorpresa trobar",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Un llibre de brodat"
     },
     {
       "day": 69,
@@ -554,7 +554,7 @@
       "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
       "image": null,
       "type": "clue",
-      "outcome": ""
+      "outcome": "Fotos"
     },
     {
       "day": 70,
