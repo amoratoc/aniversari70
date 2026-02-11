@@ -518,19 +518,19 @@
     },
     {
       "day": 65,
-      "title": "Plans per demà",
-      "clue": "Tenim reserva per 3 per dinar demà a les 13h a la muscleria",
-      "image": null,
-      "type": "virtual",
-      "outcome": "Reserva per 3 per dinar demà a la muscleria"
-    },
-    {
-      "day": 66,
       "title": "Marietaaa... tu que en saps de fer..",
       "clue": "Receptacles que transportaven objectes d'infant, de fibres vegetals, ara guarda la sorpresa que t'està esperant.",
       "image": null,
       "type": "clue",
       "outcome": "Targetes ganxet"
+    },
+    {
+      "day": 66,
+      "title": "Encara no",
+      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
+      "image": null,
+      "type": "clue",
+      "outcome": "Reserva per 3 per dinar demà a la muscleria"
     },
     {
       "day": 67,
