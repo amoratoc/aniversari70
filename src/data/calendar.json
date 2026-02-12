@@ -526,11 +526,11 @@
     },
     {
       "day": 66,
-      "title": "Encara no",
-      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
+      "title": "Acoixinament",
+      "clue": "Entre llanes i cotons, allà on l'alba il·lumina, el regal d'avui s'hi endevina",
       "image": null,
       "type": "clue",
-      "outcome": "Reserva per 3 per dinar demà a la muscleria"
+      "outcome": "Una funda per l'ordinador"
     },
     {
       "day": 67,
