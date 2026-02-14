@@ -542,11 +542,11 @@
     },
     {
       "day": 68,
-      "title": "Encara no",
-      "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
+      "title": "Solet",
+      "clue": "On sonen els trons dels somnis, un regalet espera que el trobis",
       "image": null,
       "type": "clue",
-      "outcome": "Fotos"
+      "outcome": "Catànies"
     },
     {
       "day": 69,
