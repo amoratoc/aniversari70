@@ -558,11 +558,12 @@
     },
     {
       "day": 70,
-      "title": "Moments per recordar",
+      "title": "I per l'última...",
       "clue": "Encara no està disponible la sorpresa d'avui. Reclama-la!",
-      "type": "video",
-      "path": "/assets/videos/prova.mp4",
-      "image": null
+      "type": "photo",
+      "path": "/assets/fotos/viatge.jpg",
+      "image": null,
+      "outcome": "Fotos"
     }
   ]
 }

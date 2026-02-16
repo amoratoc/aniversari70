@@ -182,109 +182,137 @@ export default function DayDetail({ dayData, startDate, onClose }: DayDetailProp
           switch (dayData.type) {
             case 'clue':
               return (
-          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-5 sm:p-6 shadow-xl border-4 border-white ${!dayAlreadyPassed ? effect.revealAnimation : ''}`}>
-            <div className="flex flex-col sm:flex-row items-start gap-4">
-              <div className="shrink-0 w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl shadow-lg">
-                🎁
-              </div>
-              <div className="flex-1">
-                {dayAlreadyPassed && dayData.outcome ? (
-                  // Show outcome if day has passed
-                  <>
-                    <h4 className="font-bold text-lg text-white drop-shadow mb-2">
-                      El teu regal era:
-                    </h4>
-                    <p className="text-stone-800 leading-relaxed text-base font-semibold">
-                      {dayData.outcome}
-                    </p>
-                  </>
-                ) : (
-                  // Show clue if it's today or outcome doesn't exist
-                  <>
-                    <h4 className="font-bold text-lg text-white drop-shadow mb-2">
-                      La teva pista d'avui:
-                    </h4>
-                    <p className="text-stone-800 leading-relaxed text-base">
-                      {dayData.clue}
-                    </p>
-                  </>
-                )}
-              </div>
-            </div>
-          </div>
-        );
+                <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-5 sm:p-6 shadow-xl border-4 border-white ${!dayAlreadyPassed ? effect.revealAnimation : ''}`}>
+                  <div className="flex flex-col sm:flex-row items-start gap-4">
+                    <div className="shrink-0 w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl shadow-lg">
+                      🎁
+                    </div>
+                    <div className="flex-1">
+                      {dayAlreadyPassed && dayData.outcome ? (
+                        // Show outcome if day has passed
+                        <>
+                          <h4 className="font-bold text-lg text-white drop-shadow mb-2">
+                            El teu regal era:
+                          </h4>
+                          <p className="text-stone-800 leading-relaxed text-base font-semibold">
+                            {dayData.outcome}
+                          </p>
+                        </>
+                      ) : (
+                        // Show clue if it's today or outcome doesn't exist
+                        <>
+                          <h4 className="font-bold text-lg text-white drop-shadow mb-2">
+                            La teva pista d'avui:
+                          </h4>
+                          <p className="text-stone-800 leading-relaxed text-base">
+                            {dayData.clue}
+                          </p>
+                        </>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              );
 
-      case 'audio':
-        return (
-          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-6 sm:p-8 shadow-xl border-4 border-white ${!dayAlreadyPassed ? effect.revealAnimation : ''}`}>
-            <div className="flex flex-col items-center gap-6">
-              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-5xl shadow-lg">
-                🎵
-              </div>
-              <div className="w-full">
-                <h4 className="font-bold text-xl text-white drop-shadow mb-4 text-center">
-                  Escolta el missatge d'avui:
-                </h4>
-                <audio
-                  key={dayData.path}
-                  controls
-                  preload="metadata"
-                  className="w-full rounded-lg shadow-lg"
-                  style={{ maxWidth: '100%' }}
-                >
-                  <source src={getAssetPath(dayData.path || '')} type="audio/mp4" />
-                  El teu navegador no suporta la reproducció d'àudio.
-                </audio>
-              </div>
-            </div>
-          </div>
-        );
+            case 'audio':
+              return (
+                <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-6 sm:p-8 shadow-xl border-4 border-white ${!dayAlreadyPassed ? effect.revealAnimation : ''}`}>
+                  <div className="flex flex-col items-center gap-6">
+                    <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-5xl shadow-lg">
+                      🎵
+                    </div>
+                    <div className="w-full">
+                      <h4 className="font-bold text-xl text-white drop-shadow mb-4 text-center">
+                        Escolta el missatge d'avui:
+                      </h4>
+                      <audio
+                        key={dayData.path}
+                        controls
+                        preload="metadata"
+                        className="w-full rounded-lg shadow-lg"
+                        style={{ maxWidth: '100%' }}
+                      >
+                        <source src={getAssetPath(dayData.path || '')} type="audio/mp4" />
+                        El teu navegador no suporta la reproducció d'àudio.
+                      </audio>
+                    </div>
+                  </div>
+                </div>
+              );
 
-      case 'video':
-        return (
-          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-6 sm:p-8 shadow-xl border-4 border-white ${!dayAlreadyPassed ? effect.revealAnimation : ''}`}>
-            <div className="flex flex-col items-center gap-6">
-              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-5xl shadow-lg">
-                🎬
-              </div>
-              <div className="w-full">
-                <h4 className="font-bold text-xl text-white drop-shadow mb-4 text-center">
-                  Mira el vídeo d'avui:
-                </h4>
-                <video
-                  key={dayData.path}
-                  controls
-                  preload="metadata"
-                  playsInline
-                  className="w-full rounded-lg shadow-lg"
-                  style={{ maxWidth: '100%', maxHeight: '60vh' }}
-                >
-                  <source src={getAssetPath(dayData.path || '')} type="video/mp4" />
-                  El teu navegador no suporta la reproducció de vídeo.
-                </video>
-              </div>
-            </div>
-          </div>
-        );
+            case 'video':
+              return (
+                <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-6 sm:p-8 shadow-xl border-4 border-white ${!dayAlreadyPassed ? effect.revealAnimation : ''}`}>
+                  <div className="flex flex-col items-center gap-6">
+                    <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-5xl shadow-lg">
+                      🎬
+                    </div>
+                    <div className="w-full">
+                      <h4 className="font-bold text-xl text-white drop-shadow mb-4 text-center">
+                        Mira el vídeo d'avui:
+                      </h4>
+                      <video
+                        key={dayData.path}
+                        controls
+                        preload="metadata"
+                        playsInline
+                        className="w-full rounded-lg shadow-lg"
+                        style={{ maxWidth: '100%', maxHeight: '60vh' }}
+                      >
+                        <source src={getAssetPath(dayData.path || '')} type="video/mp4" />
+                        El teu navegador no suporta la reproducció de vídeo.
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              );
 
-      case 'virtual':
-        return (
-          <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-6 sm:p-8 shadow-xl border-4 border-white ${!dayAlreadyPassed ? effect.revealAnimation : ''}`}>
-            <div className="flex flex-col items-center gap-6">
-              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-5xl shadow-lg">
-                🌟
-              </div>
-              <div className="w-full text-center">
-                {/* <h4 className="font-bold text-xl text-white drop-shadow mb-4">
-                  Experiència virtual
-                </h4> */}
-                <p className="text-stone-800 text-lg">
-                  {dayData.clue}
-                </p>
-              </div>
-            </div>
-          </div>
-        );
+            case 'photo':
+              return (
+                <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-6 sm:p-8 shadow-xl border-4 border-white ${!dayAlreadyPassed ? effect.revealAnimation : ''}`}>
+                  <div className="flex flex-col items-center gap-6">
+                    <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-5xl shadow-lg">
+                      📸
+                    </div>
+                    <div className="w-full">
+                      <h4 className="font-bold text-xl text-white drop-shadow mb-4 text-center">
+                        Mira la foto d'avui:
+                      </h4>
+                      {dayData.path ? (
+                        <img
+                          src={getAssetPath(dayData.path)}
+                          alt={`Foto del dia ${dayData.day}`}
+                          className="w-full h-auto rounded-lg shadow-lg"
+                          style={{ maxWidth: '100%', maxHeight: '60vh', objectFit: 'contain' }}
+                        />
+                      ) : (
+                        <p className="text-stone-800 text-center">
+                          No s&apos;ha trobat cap foto per aquest dia.
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              );
+
+            case 'virtual':
+              return (
+                <div className={`bg-linear-to-br ${getPastelColor()} rounded-xl p-6 sm:p-8 shadow-xl border-4 border-white ${!dayAlreadyPassed ? effect.revealAnimation : ''}`}>
+                  <div className="flex flex-col items-center gap-6">
+                    <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-5xl shadow-lg">
+                      🌟
+                    </div>
+                    <div className="w-full text-center">
+                      {/* <h4 className="font-bold text-xl text-white drop-shadow mb-4">
+                        Experiència virtual
+                      </h4> */}
+                      <p className="text-stone-800 text-lg">
+                        {dayData.clue}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              );
 
             default:
               return null;

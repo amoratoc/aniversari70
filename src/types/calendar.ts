@@ -1,10 +1,10 @@
 export interface DayData {
   day: number;
   title: string;
-  type: 'clue' | 'audio' | 'video' | 'virtual';
+  type: 'clue' | 'audio' | 'video' | 'photo' | 'virtual';
   clue?: string;  // Optional, only for type: 'clue'
   outcome?: string;  // Optional, the actual gift for type: 'clue' (shown after day has passed)
-  path?: string;  // Optional, for audio/video/virtual
+  path?: string;  // Optional, for audio/video/photo/virtual
   image: string | null;
 }
 
